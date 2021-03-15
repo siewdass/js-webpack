@@ -8,7 +8,13 @@ const config = {
     output: {
         path: path.resolve( __dirname, './dist' ),
         filename: 'main.js',
-    }
+    },
+    stats: {
+		warningsFilter: [
+			'node_modules/express/lib/view.js',
+			warning => false,
+		],
+	}
 }
 
 module.exports = config
