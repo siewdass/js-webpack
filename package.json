@@ -1,5 +1,5 @@
 {
-  "name": "project-docs",
+  "name": "nodejs-webpack",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
