@@ -5,6 +5,7 @@
 	"**/__init__.py": true,
 	"**/.git": true,
 	"**/node_modules": true,
-	"**/dist": true
+	"**/dist": true,
+	"package-lock.json": true
 	}
 }

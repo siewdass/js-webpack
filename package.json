@@ -4,12 +4,13 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production && javascript-obfuscator dist/bundle.js --output dist/main.js && rm dist/bundle.js",
     "pull": "node git.config.js pull",
     "push": "node git.config.js push"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "javascript-obfuscator": "^2.11.0",
     "nodemon": "^2.0.7",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"

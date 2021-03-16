@@ -7,7 +7,7 @@ const config = {
     },
     output: {
         path: path.resolve( __dirname, './dist' ),
-        filename: 'main.js',
+        filename: 'bundle.js',
     },
     stats: {
 		warningsFilter: [
