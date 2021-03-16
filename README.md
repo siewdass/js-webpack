@@ -1,1 +1,1 @@
-Need obfuscate, github release git pull push major mimir fix
+Need obfuscate, github release major mimir fix
