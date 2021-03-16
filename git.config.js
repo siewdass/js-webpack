@@ -15,12 +15,12 @@ if ( process.argv.includes( 'pull' ) ) {
 } else if ( process.argv.includes( 'push' ) ) {
 	rl.question( '', ( commit ) => {
 		cmd = 'git add . && git commit -m "'+ commit +'" && git push '
-		console.log( '\033[1A' + cmd )
+		//console.log( '\033[1A' + cmd )
 
 		exec( cmd, ( error, stdOut, stdErr ) => {
 			if ( error == null ) {
 				//console.log( stdOut.slice( 0, -1 ) )
-				console.log( '\033[1A' + cmd )
+				console.log( '\033[1A' + stdOut )
 			}
 		} )
 		rl.close( )
