@@ -5,7 +5,7 @@ var cmd = null
 if ( process.argv.includes( 'pull' ) ) {
 	cmd = 'git pull'
 } else if ( process.argv.includes( 'push' ) ) {
-	cmd = 'git add . && git commit -m "-" && git pull'
+	cmd = 'git add . && git commit -m "-" && git push'
 }
 
 exec( cmd, function ( error, stdOut, stdErr ) {
